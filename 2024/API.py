@@ -13,6 +13,7 @@ allArea = 0
 subRegionLV =''
 bordersLV = []
 for country in responseParsed:
+    print(country['name']['common'])
     amount += 1
     allPopulation += country['population']
     allArea += country['area']
@@ -26,7 +27,7 @@ for countryLV in responseParsedLV:
 avgPop = allPopulation / amount
 
 
-
+print(amount)
 print(avgPop)
 print(populationMax)
 print(allArea)
