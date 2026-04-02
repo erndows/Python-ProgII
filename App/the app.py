@@ -4,6 +4,8 @@ import pygame
 import random
 import thorpy
 
+#selenium, psutil, sys, wmi
+
 pygame.init()
 
 ekrans = pygame.display.set_mode((1280, 720))
@@ -51,7 +53,6 @@ gCena = 0
 
 while run:
     dkSkaits += 1
-    fCena += 1
     fWidth, fHeight = text_font.size(f"{fCena}")
     wWidth, wHeight = text_font.size(f"{wCena}")
     gWidth, gHeight = text_font.size(f"{gCena}")
